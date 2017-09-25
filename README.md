@@ -1,8 +1,9 @@
-workerman-chat
+workerman-barrage
 =======
-基于workerman的GatewayWorker框架开发的一款高性能支持分布式部署的聊天室系统。
+基于workerman的GatewayWorker框架的弹幕小dome
 
 GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
+Workerman框架文档: http://doc.workerman.net/315110
 
  特性
 ======
@@ -39,8 +40,8 @@ ctrl+c 停止
 =======
 windows系统下无法使用 stop reload status 等命令  
 
-测试
+WebSocket 在线测试
 =======
-浏览器访问 http://服务器ip或域:55151,例如http://127.0.0.1:55151
+http://www.blue-zero.com/WebSocket/
+ws://127.0.0.1:7272
 
- [更多请访问www.workerman.net](http://www.workerman.net/workerman-chat)
