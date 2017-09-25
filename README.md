@@ -41,5 +41,5 @@ WebSocket 在线测试
 =======
 http://www.blue-zero.com/WebSocket/
 
-ws://127.0.0.1:7272
+ws://127.0.0.1:7272?sign=xiuxiaowo
 
