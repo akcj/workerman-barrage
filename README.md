@@ -15,12 +15,10 @@ Workerman框架文档: http://doc.workerman.net/315110
  * 支持多服务器部署
  * 业务逻辑全部在一个文件中，快速入门可以参考这个文件[Applications/Chat/Event.php](https://github.com/walkor/workerman-chat-for-win/blob/master/Applications/Chat/Event.php)   
 
-安装
+安装（windows环境）
 =====
 
 下载 或者 clone 代码到本地
-
-进入到代码目录，运行 ```composer install``` 安装
 
 要求 php>=5.3.3 并且配置好了php环境变量
 
