@@ -2,7 +2,7 @@ workerman-barrage
 =======
 基于workerman的GatewayWorker框架的弹幕小dome
 
-GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
+GatewayWorker框架文档：http://doc2.workerman.net/326102
 
 Workerman框架文档: http://doc.workerman.net/315110
 
