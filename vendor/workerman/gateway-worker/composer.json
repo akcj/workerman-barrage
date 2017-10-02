@@ -1,10 +1,10 @@
 {
-    "name"  : "workerman/gateway-worker-for-win",
+    "name"  : "workerman/gateway-worker",
     "keywords": ["distributed","communication"],
     "homepage": "http://www.workerman.net",
     "license" : "MIT",
     "require": {
-        "workerman/workerman-for-win" : ">=3.1.8"
+        "workerman/workerman" : ">=3.1.8"
     },
     "autoload": {
         "psr-4": {"GatewayWorker\\": "./src"}

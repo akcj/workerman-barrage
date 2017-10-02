@@ -1,24 +1,29 @@
 [
     {
-        "name": "workerman/workerman-for-win",
+        "name": "workerman/workerman",
         "version": "v3.5.1",
         "version_normalized": "3.5.1.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/walkor/workerman-for-win.git",
-            "reference": "cbaae3193e4567fd9cfc8099931c63d9b12174ee"
+            "url": "https://github.com/walkor/Workerman.git",
+            "reference": "01aadefdc3e7bf65dd0956d1d876bc9d27cd9156"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/walkor/workerman-for-win/zipball/cbaae3193e4567fd9cfc8099931c63d9b12174ee",
-            "reference": "cbaae3193e4567fd9cfc8099931c63d9b12174ee",
+            "url": "https://api.github.com/repos/walkor/Workerman/zipball/01aadefdc3e7bf65dd0956d1d876bc9d27cd9156",
+            "reference": "01aadefdc3e7bf65dd0956d1d876bc9d27cd9156",
             "shasum": ""
         },
         "require": {
+            "ext-pcntl": "*",
+            "ext-posix": "*",
             "php": ">=5.3"
         },
-        "time": "2017-08-28T10:05:00+00:00",
-        "type": "project",
+        "suggest": {
+            "ext-event": "For better performance. "
+        },
+        "time": "2017-08-25T08:26:28+00:00",
+        "type": "library",
         "installation-source": "dist",
         "autoload": {
             "psr-4": {
@@ -45,24 +50,24 @@
         ]
     },
     {
-        "name": "workerman/gateway-worker-for-win",
+        "name": "workerman/gateway-worker",
         "version": "v3.0.7",
         "version_normalized": "3.0.7.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/walkor/GatewayWorker-for-win.git",
-            "reference": "ea75b5d581db1762e9928f5729200a1abcaba496"
+            "url": "https://github.com/walkor/GatewayWorker.git",
+            "reference": "4444c59da4b5cd68679172904a40b66e1338389c"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/walkor/GatewayWorker-for-win/zipball/ea75b5d581db1762e9928f5729200a1abcaba496",
-            "reference": "ea75b5d581db1762e9928f5729200a1abcaba496",
+            "url": "https://api.github.com/repos/walkor/GatewayWorker/zipball/4444c59da4b5cd68679172904a40b66e1338389c",
+            "reference": "4444c59da4b5cd68679172904a40b66e1338389c",
             "shasum": ""
         },
         "require": {
-            "workerman/workerman-for-win": ">=3.1.8"
+            "workerman/workerman": ">=3.1.8"
         },
-        "time": "2017-06-26T14:51:29+00:00",
+        "time": "2017-06-26T14:49:54+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {

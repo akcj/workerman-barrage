@@ -26,14 +26,8 @@
 use \GatewayWorker\Lib\Gateway;
 
 class Events
-{   
-
-    public static function onConnect($client_id) {
-    // debug
-    echo "time:".date("Y-m-d H:i:s")." client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id onConnect:''\n";
-    $new_message = ['code'=>0,'msg'=>'握手成功',];
-    Gateway::sendToCurrentClient(json_encode($new_message));
-   }
+{
+   
    /**
     * 有消息时
     * @param int $client_id
@@ -42,8 +36,7 @@ class Events
    public static function onMessage($client_id, $message)
    {
         // debug
-        
-        echo "time:".date('Y-m-d H:i:s')." client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id session:".json_encode($_SESSION)." onMessage:".$message."\n";
+        echo "client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id session:".json_encode($_SESSION)." onMessage:".$message."\n";
         
         // 客户端传递的是json数据
         $message_data = json_decode($message, true);
@@ -108,9 +101,7 @@ class Events
    public static function onClose($client_id)
    {
        // debug
-        // debug
-    echo "time:".date("Y-m-d H:i:s")." client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id session:".json_encode($_SESSION)." onClose:''\n";
-       
+       echo "client:{$_SERVER['REMOTE_ADDR']}:{$_SERVER['REMOTE_PORT']} gateway:{$_SERVER['GATEWAY_ADDR']}:{$_SERVER['GATEWAY_PORT']}  client_id:$client_id onClose:''\n";
    }
   
 }
