@@ -4,6 +4,8 @@ workerman-chat
 
 GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
 
+Workerman框架文档: http://doc.workerman.net/315110
+
  特性
 ======
  * 使用websocket协议
@@ -25,7 +27,10 @@ GatewayWorker框架文档：http://www.workerman.net/gatewaydoc/
 
 
 
-测试
+WebSocket 在线测试
 =======
-浏览器访问 http://服务器ip或域:55151,例如http://127.0.0.1:55151
+http://www.blue-zero.com/WebSocket/
+
+ws://127.0.0.1:7272
+
 
